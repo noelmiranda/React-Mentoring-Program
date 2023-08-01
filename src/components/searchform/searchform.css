@@ -1,0 +1,52 @@
+.search-form-container {
+  color: #ffff;
+  height: 280px;
+  width: 1200px;
+  margin-top: 0px;
+  text-align: left;
+}
+.title-search-header {
+    margin-left: 120px;
+    margin-bottom: 38px;
+}
+.input-search-button {
+    width: 970px;
+    margin: 0px auto;
+}
+
+.input-search-form {
+  width: 713px;
+  height: 57px;
+  background: #323232;
+  opacity: 0.8;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-right: 14px;
+  border: none;
+  text-indent: 19px;
+  color: #fff;
+}
+
+.search-film-button {
+  background: #f65261;
+  color: #fff;
+  width: 233px;
+  height: 57px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.title-search-header {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.input-search-form::placeholder {
+  color: #fff;
+  font-size: 17px;
+  opacity: 0.5;
+}
