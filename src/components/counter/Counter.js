@@ -33,7 +33,12 @@ export class Counter extends React.Component {
       "Increment"
     );
 
-    const counterValue = React.createElement("div", { className: "counter-value" }, `Count: ${value}`);
+    const counterValue = React.createElement(
+      "div",
+      { className: "counter-value", "data-testid": "count" }, // Add data-testid attribute here
+      `Count: ${value}`
+    );
+
 
     const counterComponent = React.createElement(
       "div",
