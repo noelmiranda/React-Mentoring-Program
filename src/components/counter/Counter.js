@@ -23,13 +23,13 @@ export class Counter extends React.Component {
 
     const decrementButton = React.createElement(
       "button",
-      { onClick: this.handleDecrement },
+      {  className: "btn-decrement", onClick: this.handleDecrement },
       "Decrement"
     );
 
     const incrementButton = React.createElement(
       "button",
-      { onClick: this.handleIncrement },
+      { className: "btn-increment", onClick: this.handleIncrement },
       "Increment"
     );
 
