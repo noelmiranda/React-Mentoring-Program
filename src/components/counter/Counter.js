@@ -1,7 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import "./counter.css";
 
 export class Counter extends React.Component {
+  static propTypes = {
+    initialValue: PropTypes.number,
+  };
   constructor(props) {
     super(props);
 
@@ -35,7 +39,7 @@ export class Counter extends React.Component {
 
     const counterValue = React.createElement(
       "div",
-      { className: "counter-value", "data-testid": "count" }, // Add data-testid attribute here
+      { className: "counter-value", "data-testid": "count" },
       `Count: ${value}`
     );
 

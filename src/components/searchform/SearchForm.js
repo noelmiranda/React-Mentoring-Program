@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import "./searchform.css";
 
 const SearchForm = ({ initialSearchQuery, onSearch }) => {
@@ -16,11 +17,12 @@ const SearchForm = ({ initialSearchQuery, onSearch }) => {
   };
 
   const handleKeyPress = (event) => {
-    if ((event.key === "Enter") && (searchQuery.trim() !== "")) {
+    if (event.key === "Enter" && searchQuery.trim() !== "") {
       onSearch(searchQuery);
       resetSearchQuery();
     }
   };
+
   const resetSearchQuery = () => {
     setSearchQuery("");
   };
@@ -43,6 +45,11 @@ const SearchForm = ({ initialSearchQuery, onSearch }) => {
       </div>
     </div>
   );
+};
+
+SearchForm.propTypes = {
+  initialSearchQuery: PropTypes.string,
+  onSearch: PropTypes.func.isRequired,
 };
 
 export default SearchForm;

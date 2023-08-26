@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const GenreSelect = ({ genres, selectedGenre, onSelect }) => {
   return (
@@ -17,6 +18,12 @@ const GenreSelect = ({ genres, selectedGenre, onSelect }) => {
       ))}
     </div>
   );
+};
+
+GenreSelect.propTypes = {
+  genres: PropTypes.arrayOf(PropTypes.string).isRequired,
+  selectedGenre: PropTypes.string.isRequired,
+  onSelect: PropTypes.func.isRequired,
 };
 
 export default GenreSelect;
